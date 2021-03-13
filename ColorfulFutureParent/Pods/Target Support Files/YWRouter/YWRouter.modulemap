@@ -1,6 +1,0 @@
-framework module YWRouter {
-  umbrella header "YWRouter-umbrella.h"
-
-  export *
-  module * { export * }
-}
