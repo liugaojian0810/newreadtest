@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="aryuangb_bd.ttf">
+            <string>ARYuanGB-BD</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="235" id="KGk-i7-Jjw" customClass="HFAcountDestroy" customModule="柒彩未来" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="235"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="235"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2yI-3o-En4">
+                        <rect key="frame" x="19" y="24" width="5" height="5"/>
+                        <color key="backgroundColor" red="0.98039215686274506" green="0.56470588235294117" blue="0.18823529411764706" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="5" id="ApG-Ob-Sq1"/>
+                            <constraint firstAttribute="width" constant="5" id="nbc-J0-9bl"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <real key="value" value="2.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W2J-eS-Ret">
+                        <rect key="frame" x="19" y="77" width="5" height="5"/>
+                        <color key="backgroundColor" red="0.98039215690000003" green="0.56470588239999997" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="5" id="PU9-Ft-uSC"/>
+                            <constraint firstAttribute="height" constant="5" id="h4g-yl-dyy"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <real key="value" value="2.5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="无法登录，关系解绑" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XgH-9P-KWC">
+                        <rect key="frame" x="30" y="19" width="117" height="15.5"/>
+                        <fontDescription key="fontDescription" name="ARYuanGB-BD" family="AR YuanGB" pointSize="13"/>
+                        <color key="textColor" red="0.27058823529411763" green="0.27058823529411763" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="信息抹除，无法恢复" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zOj-2W-Ak0">
+                        <rect key="frame" x="30" y="72" width="117" height="15.5"/>
+                        <fontDescription key="fontDescription" name="ARYuanGB-BD" family="AR YuanGB" pointSize="13"/>
+                        <color key="textColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一旦注销，你将无法使用该账号登录柒彩未来。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZPg-tF-4iD">
+                        <rect key="frame" x="30" y="41.5" width="252" height="14"/>
+                        <fontDescription key="fontDescription" name="ARYuanGB-BD" family="AR YuanGB" pointSize="12"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="注销后将永久抹除柒彩未来课程内容，包括但不限于直播功能、五彩宝石、优惠券、个人资料等。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hYP-aE-SkT">
+                        <rect key="frame" x="30" y="94.5" width="280" height="28"/>
+                        <fontDescription key="fontDescription" name="ARYuanGB-BD" family="AR YuanGB" pointSize="12"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我已清楚风险，确定继续申请注销账号" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nXU-tz-3lP">
+                        <rect key="frame" x="35" y="139.5" width="187" height="13"/>
+                        <fontDescription key="fontDescription" name="ARYuanGB-BD" family="AR YuanGB" pointSize="11"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yeu-Lu-CXf">
+                        <rect key="frame" x="19" y="135" width="12" height="22"/>
+                        <state key="normal" image="icon-gouxuan"/>
+                        <state key="selected" image="icon-gouxuanzhopng"/>
+                        <connections>
+                            <action selector="agree:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="4mo-bi-9Oo"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AH0-j6-0ZI">
+                        <rect key="frame" x="57.5" y="170.5" width="205" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="l2m-2C-Udx"/>
+                            <constraint firstAttribute="width" constant="205" id="pp2-qR-j83"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ARYuanGB-BD" family="AR YuanGB" pointSize="15"/>
+                        <state key="normal" title="下一步" backgroundImage="button-next">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="nextClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="bgI-XT-trH"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ZPg-tF-4iD" firstAttribute="leading" secondItem="XgH-9P-KWC" secondAttribute="leading" id="3ni-TU-2ur"/>
+                    <constraint firstItem="zOj-2W-Ak0" firstAttribute="centerY" secondItem="W2J-eS-Ret" secondAttribute="centerY" id="5JU-Y1-xM0"/>
+                    <constraint firstItem="XgH-9P-KWC" firstAttribute="leading" secondItem="2yI-3o-En4" secondAttribute="trailing" constant="6" id="952-hb-juR"/>
+                    <constraint firstItem="nXU-tz-3lP" firstAttribute="leading" secondItem="Yeu-Lu-CXf" secondAttribute="trailing" constant="4" id="GXQ-fz-SQN"/>
+                    <constraint firstItem="2yI-3o-En4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="19" id="H2f-fn-MpS"/>
+                    <constraint firstItem="Yeu-Lu-CXf" firstAttribute="centerY" secondItem="nXU-tz-3lP" secondAttribute="centerY" id="IQ0-5z-TY2"/>
+                    <constraint firstItem="W2J-eS-Ret" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="19" id="JEG-Xe-20Y"/>
+                    <constraint firstItem="W2J-eS-Ret" firstAttribute="top" secondItem="2yI-3o-En4" secondAttribute="bottom" constant="48" id="NuH-aC-XUZ"/>
+                    <constraint firstAttribute="trailing" secondItem="hYP-aE-SkT" secondAttribute="trailing" constant="10" id="Qn5-7d-QXB"/>
+                    <constraint firstItem="zOj-2W-Ak0" firstAttribute="leading" secondItem="W2J-eS-Ret" secondAttribute="trailing" constant="6" id="WWG-XO-Brk"/>
+                    <constraint firstItem="AH0-j6-0ZI" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Wdq-SI-2x2"/>
+                    <constraint firstItem="nXU-tz-3lP" firstAttribute="top" secondItem="hYP-aE-SkT" secondAttribute="bottom" constant="17" id="YWI-nu-cv7"/>
+                    <constraint firstItem="XgH-9P-KWC" firstAttribute="centerY" secondItem="2yI-3o-En4" secondAttribute="centerY" id="bzU-H0-Sam"/>
+                    <constraint firstItem="2yI-3o-En4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="24" id="e03-yu-Pql"/>
+                    <constraint firstItem="hYP-aE-SkT" firstAttribute="top" secondItem="zOj-2W-Ak0" secondAttribute="bottom" constant="7" id="ena-ee-nu7"/>
+                    <constraint firstItem="hYP-aE-SkT" firstAttribute="leading" secondItem="zOj-2W-Ak0" secondAttribute="leading" id="jpq-aX-O2G"/>
+                    <constraint firstItem="nXU-tz-3lP" firstAttribute="leading" secondItem="hYP-aE-SkT" secondAttribute="leading" constant="5" id="ofw-ws-gGI"/>
+                    <constraint firstItem="ZPg-tF-4iD" firstAttribute="top" secondItem="XgH-9P-KWC" secondAttribute="bottom" constant="7" id="t6X-c8-2Hj"/>
+                    <constraint firstItem="AH0-j6-0ZI" firstAttribute="top" secondItem="nXU-tz-3lP" secondAttribute="bottom" constant="18" id="vjw-Q3-7dc"/>
+                </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                        <real key="value" value="2.5"/>
+                    </userDefinedRuntimeAttribute>
+                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                </userDefinedRuntimeAttributes>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="agreeButton" destination="Yeu-Lu-CXf" id="5ag-pP-N4B"/>
+                <outlet property="nextButton" destination="AH0-j6-0ZI" id="6JC-t5-yqS"/>
+            </connections>
+            <point key="canvasLocation" x="134.78260869565219" y="94.754464285714278"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="button-next" width="206" height="40"/>
+        <image name="icon-gouxuan" width="12" height="12"/>
+        <image name="icon-gouxuanzhopng" width="13" height="13"/>
+    </resources>
+</document>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HFPlayBackViewController">
+            <connections>
+                <outlet property="tableview" destination="Kmw-La-Paf" id="d4f-fo-ToI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kLq-Uv-BYY">
+                    <rect key="frame" x="103" y="91.5" width="461" height="252"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Kmw-La-Paf">
+                            <rect key="frame" x="28" y="44" width="405" height="183"/>
+                            <color key="backgroundColor" red="0.92941176469999998" green="0.87058823529999996" blue="0.75686274509999996" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="183" id="trU-lo-fDx"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </tableView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="461" id="MLY-yC-3Mf"/>
+                        <constraint firstAttribute="height" constant="252" id="MRt-Gf-iYb"/>
+                        <constraint firstAttribute="bottom" secondItem="Kmw-La-Paf" secondAttribute="bottom" constant="25" id="PYE-fh-hJe"/>
+                        <constraint firstAttribute="trailing" secondItem="Kmw-La-Paf" secondAttribute="trailing" constant="28" id="RXa-Hy-QLN"/>
+                        <constraint firstItem="Kmw-La-Paf" firstAttribute="leading" secondItem="kLq-Uv-BYY" secondAttribute="leading" constant="28" id="h9m-eo-Wj8"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="kLq-Uv-BYY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="4pV-CO-9kN"/>
+                <constraint firstItem="kLq-Uv-BYY" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="30" id="aLl-TE-wz5"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="139" y="116"/>
+        </view>
+    </objects>
+</document>

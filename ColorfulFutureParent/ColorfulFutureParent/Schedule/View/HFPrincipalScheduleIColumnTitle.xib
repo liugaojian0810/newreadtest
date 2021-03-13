@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="75" id="KGk-i7-Jjw" customClass="HFPrincipalScheduleIColumnTitle">
+            <rect key="frame" x="0.0" y="0.0" width="98" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="98" height="75"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AqD-nj-7e6">
+                        <rect key="frame" x="97.5" y="25" width="0.5" height="25"/>
+                        <color key="backgroundColor" red="0.85098039215686272" green="0.89411764705882346" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="QNj-sE-LGM"/>
+                            <constraint firstAttribute="width" constant="0.5" id="fZP-CC-kjV"/>
+                        </constraints>
+                    </view>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ibT-kh-3fj">
+                        <rect key="frame" x="1" y="37" width="95.5" height="1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="mZ6-GS-wM3"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="周二" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uiB-2g-BvF">
+                        <rect key="frame" x="38" y="22.5" width="22.5" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.27843137254901962" green="0.30196078431372547" blue="0.40784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="19" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4r-xw-sbm">
+                        <rect key="frame" x="43" y="39" width="12.5" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.27843137254901962" green="0.30196078431372547" blue="0.40784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="AqD-nj-7e6" secondAttribute="trailing" id="18j-o9-fHr"/>
+                    <constraint firstItem="AqD-nj-7e6" firstAttribute="leading" secondItem="ibT-kh-3fj" secondAttribute="trailing" constant="1" id="3eY-Cx-c6E"/>
+                    <constraint firstItem="ibT-kh-3fj" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="NQ9-Vb-AJY"/>
+                    <constraint firstItem="i4r-xw-sbm" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Pqy-tv-1vX"/>
+                    <constraint firstItem="AqD-nj-7e6" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Ue1-0I-m9Z"/>
+                    <constraint firstItem="ibT-kh-3fj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="1" id="YQX-uP-aYJ"/>
+                    <constraint firstItem="i4r-xw-sbm" firstAttribute="top" secondItem="ibT-kh-3fj" secondAttribute="bottom" constant="1" id="cej-GK-xmm"/>
+                    <constraint firstItem="ibT-kh-3fj" firstAttribute="top" secondItem="uiB-2g-BvF" secondAttribute="bottom" constant="1" id="fKX-oR-mnN"/>
+                    <constraint firstItem="uiB-2g-BvF" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="jjy-ru-ll8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="day" destination="i4r-xw-sbm" id="1l5-OF-0HI"/>
+                <outlet property="week" destination="uiB-2g-BvF" id="fOM-Af-5WO"/>
+            </connections>
+            <point key="canvasLocation" x="-28.985507246376812" y="130.91517857142856"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="aryuangb_bd.ttf">
+            <string>ARYuanGB-BD</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="277" id="KGk-i7-Jjw" customClass="HFSmallTaskShowCell" customModule="柒彩未来" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="499" height="277"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="499" height="277"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X4a-i4-VZm">
+                        <rect key="frame" x="15" y="0.0" width="469" height="277"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="小任务" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GOb-6o-elm">
+                                <rect key="frame" x="32" y="16" width="45" height="15"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="ARYuanGB-BD" family="AR YuanGB" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="class_icon_samllrenwu" translatesAutoresizingMaskIntoConstraints="NO" id="7Lb-mR-wFh">
+                                <rect key="frame" x="13" y="16" width="15" height="15"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hudonghuodongxiangqing_icon_msg_nor.png" translatesAutoresizingMaskIntoConstraints="NO" id="ue5-dZ-Y2N">
+                                <rect key="frame" x="86" y="16.5" width="14" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="14" id="fBq-gd-AUH"/>
+                                    <constraint firstAttribute="height" constant="14" id="t1q-DG-8JO"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DYs-f1-e2E">
+                                <rect key="frame" x="32.5" y="43" width="414" height="172"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="hIU-xt-vYP">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="172"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="hIU-xt-vYP" firstAttribute="top" secondItem="DYs-f1-e2E" secondAttribute="top" id="ZRd-FJ-Mbg"/>
+                                    <constraint firstAttribute="trailing" secondItem="hIU-xt-vYP" secondAttribute="trailing" id="cQj-ep-TeX"/>
+                                    <constraint firstItem="hIU-xt-vYP" firstAttribute="leading" secondItem="DYs-f1-e2E" secondAttribute="leading" id="mME-ko-aEw"/>
+                                    <constraint firstAttribute="bottom" secondItem="hIU-xt-vYP" secondAttribute="bottom" id="obQ-d0-Yt8"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qkv-dg-ttk">
+                                <rect key="frame" x="33" y="219" width="403" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="QSQ-K6-o7z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ARYuanGB-BD" family="AR YuanGB" pointSize="12"/>
+                                <state key="normal" title="添加小任务" image="Interact_add_task"/>
+                                <connections>
+                                    <action selector="clickAddTask:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="feR-vZ-yk5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SlG-Zz-FNa">
+                                <rect key="frame" x="420" y="1.5" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="0D9-7w-Ac6"/>
+                                    <constraint firstAttribute="width" constant="44" id="e4P-hB-5NP"/>
+                                </constraints>
+                                <state key="normal" image="small_edit"/>
+                                <connections>
+                                    <action selector="clickEditTask:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="745-7F-6TA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12549019607843137" green="0.70980392156862748" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="DYs-f1-e2E" firstAttribute="top" secondItem="X4a-i4-VZm" secondAttribute="top" constant="43" id="0PN-Ec-u21"/>
+                            <constraint firstItem="GOb-6o-elm" firstAttribute="leading" secondItem="X4a-i4-VZm" secondAttribute="leading" constant="32" id="1po-iH-r57"/>
+                            <constraint firstAttribute="trailing" secondItem="SlG-Zz-FNa" secondAttribute="trailing" constant="5" id="9sg-if-ZcW"/>
+                            <constraint firstAttribute="trailing" secondItem="DYs-f1-e2E" secondAttribute="trailing" constant="22.5" id="Djd-AH-xOi"/>
+                            <constraint firstItem="ue5-dZ-Y2N" firstAttribute="centerY" secondItem="GOb-6o-elm" secondAttribute="centerY" id="IO1-gl-1t1"/>
+                            <constraint firstAttribute="trailing" secondItem="qkv-dg-ttk" secondAttribute="trailing" constant="33" id="KBC-Ai-22I"/>
+                            <constraint firstItem="ue5-dZ-Y2N" firstAttribute="leading" secondItem="GOb-6o-elm" secondAttribute="trailing" constant="9" id="KyZ-Ja-m1f"/>
+                            <constraint firstItem="7Lb-mR-wFh" firstAttribute="centerY" secondItem="GOb-6o-elm" secondAttribute="centerY" id="Nvr-HH-6Ha"/>
+                            <constraint firstItem="qkv-dg-ttk" firstAttribute="leading" secondItem="X4a-i4-VZm" secondAttribute="leading" constant="33" id="Qyx-Rr-FLf"/>
+                            <constraint firstItem="DYs-f1-e2E" firstAttribute="leading" secondItem="X4a-i4-VZm" secondAttribute="leading" constant="32.5" id="RyD-vI-jzA"/>
+                            <constraint firstItem="GOb-6o-elm" firstAttribute="top" secondItem="X4a-i4-VZm" secondAttribute="top" constant="16" id="Tjn-BB-ybc"/>
+                            <constraint firstAttribute="bottom" secondItem="qkv-dg-ttk" secondAttribute="bottom" constant="13" id="c6f-w5-1Hv"/>
+                            <constraint firstItem="SlG-Zz-FNa" firstAttribute="centerY" secondItem="GOb-6o-elm" secondAttribute="centerY" id="gIJ-iy-vAX"/>
+                            <constraint firstItem="GOb-6o-elm" firstAttribute="leading" secondItem="7Lb-mR-wFh" secondAttribute="trailing" constant="4" id="mBa-Yn-MHv"/>
+                            <constraint firstAttribute="bottom" secondItem="DYs-f1-e2E" secondAttribute="bottom" constant="62" id="pX2-fC-VBy"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="X4a-i4-VZm" secondAttribute="bottom" id="1Fm-pl-qo6"/>
+                    <constraint firstAttribute="trailing" secondItem="X4a-i4-VZm" secondAttribute="trailing" constant="15" id="neT-uw-HBZ"/>
+                    <constraint firstItem="X4a-i4-VZm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="rM4-2H-qiQ"/>
+                    <constraint firstItem="X4a-i4-VZm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="tuZ-Bv-cfc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="addTaskBtn" destination="qkv-dg-ttk" id="o3q-O2-Aiy"/>
+                <outlet property="bottomConstraint" destination="pX2-fC-VBy" id="VWf-gI-uCi"/>
+                <outlet property="editTaskBtn" destination="SlG-Zz-FNa" id="N7b-Za-eth"/>
+                <outlet property="tableView" destination="hIU-xt-vYP" id="zzv-Wa-HI6"/>
+            </connections>
+            <point key="canvasLocation" x="241.30434782608697" y="162.38839285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Interact_add_task" width="24" height="24"/>
+        <image name="class_icon_samllrenwu" width="15" height="15"/>
+        <image name="hudonghuodongxiangqing_icon_msg_nor.png" width="9.5" height="9.5"/>
+        <image name="small_edit" width="16" height="16"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="HFFormRadioBoxCell" customModule="柒彩未来" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="幼儿园名称（必填）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LUe-iv-1Em">
+                        <rect key="frame" x="16" y="13" width="138" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j7e-Xl-uty">
+                        <rect key="frame" x="176" y="13" width="32" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title="否" image="login_agreement_unsel">
+                            <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                        </state>
+                        <state key="selected" image="login_agreement_sel"/>
+                        <connections>
+                            <action selector="clickLeft:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ctX-d1-hok"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pMt-Vh-tFo">
+                        <rect key="frame" x="248" y="13" width="32" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title="是" image="login_agreement_unsel">
+                            <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <state key="selected" image="login_agreement_sel"/>
+                        <connections>
+                            <action selector="clickRight:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="jOt-tW-FzW"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="pMt-Vh-tFo" secondAttribute="trailing" constant="40" id="T0e-62-1Em"/>
+                    <constraint firstItem="LUe-iv-1Em" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Uf7-bL-ioV"/>
+                    <constraint firstItem="pMt-Vh-tFo" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Yt5-su-B0Z"/>
+                    <constraint firstItem="LUe-iv-1Em" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="gmr-Pp-19L"/>
+                    <constraint firstItem="j7e-Xl-uty" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="kel-zs-Sf6"/>
+                    <constraint firstItem="pMt-Vh-tFo" firstAttribute="leading" secondItem="j7e-Xl-uty" secondAttribute="trailing" constant="40" id="rCk-vC-nza"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="formTitleLabel" destination="LUe-iv-1Em" id="6OQ-Hx-BKa"/>
+                <outlet property="leftBtn" destination="j7e-Xl-uty" id="XqS-Q3-y6f"/>
+                <outlet property="rightBtn" destination="pMt-Vh-tFo" id="KZq-r8-63P"/>
+            </connections>
+            <point key="canvasLocation" x="-28" y="80"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="login_agreement_sel" width="16" height="16"/>
+        <image name="login_agreement_unsel" width="16" height="16"/>
+    </resources>
+</document>

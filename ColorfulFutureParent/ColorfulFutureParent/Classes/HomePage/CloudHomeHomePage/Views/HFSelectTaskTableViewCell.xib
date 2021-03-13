@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="aryuangb_md.ttf">
+            <string>ARYuanGB-MD</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="41" id="KGk-i7-Jjw" customClass="HFSelectTaskTableViewCell" customModule="柒彩未来" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="41"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="41"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7d0-nT-GFC">
+                        <rect key="frame" x="15" y="0.0" width="290" height="41"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" text="小任务" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aHU-ZF-Ol2">
+                                <rect key="frame" x="15" y="0.0" width="223" height="14"/>
+                                <fontDescription key="fontDescription" name="ARYuanGB-MD" family="AR YuanGB" pointSize="14"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yRf-a0-t0c">
+                                <rect key="frame" x="250" y="0.0" width="40" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="xh7-KY-mkS"/>
+                                </constraints>
+                                <state key="normal" image="Selectionbox_circular_n"/>
+                                <state key="disabled" image="Selectionbox_circular_d"/>
+                                <state key="selected" image="Selectionbox_circular_s"/>
+                                <connections>
+                                    <action selector="clickSelect:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Rc4-CF-mlZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yRf-a0-t0c" firstAttribute="centerY" secondItem="aHU-ZF-Ol2" secondAttribute="centerY" priority="750" id="ApQ-cL-q6v"/>
+                            <constraint firstItem="yRf-a0-t0c" firstAttribute="top" relation="greaterThanOrEqual" secondItem="7d0-nT-GFC" secondAttribute="top" id="g7e-hr-xLH"/>
+                            <constraint firstAttribute="trailing" secondItem="yRf-a0-t0c" secondAttribute="trailing" id="nKx-Rd-DhV"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="aHU-ZF-Ol2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="1nj-TW-BRL"/>
+                    <constraint firstAttribute="trailing" secondItem="7d0-nT-GFC" secondAttribute="trailing" constant="15" id="6Ub-Tm-B2G"/>
+                    <constraint firstAttribute="trailing" secondItem="aHU-ZF-Ol2" secondAttribute="trailing" constant="67" id="Fyz-Qi-d6U"/>
+                    <constraint firstItem="7d0-nT-GFC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Yue-mi-SfY"/>
+                    <constraint firstItem="7d0-nT-GFC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ceg-ds-9QQ"/>
+                    <constraint firstItem="aHU-ZF-Ol2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="fkT-aY-o8d"/>
+                    <constraint firstAttribute="bottom" secondItem="7d0-nT-GFC" secondAttribute="bottom" id="koY-Dr-yBa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bgView" destination="7d0-nT-GFC" id="Mq2-da-pAH"/>
+                <outlet property="contentLab" destination="aHU-ZF-Ol2" id="byF-Qq-YBg"/>
+                <outlet property="selectBtn" destination="yRf-a0-t0c" id="9AR-BE-zyB"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="82.700892857142847"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Selectionbox_circular_d" width="16" height="16"/>
+        <image name="Selectionbox_circular_n" width="16" height="16"/>
+        <image name="Selectionbox_circular_s" width="16" height="16"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

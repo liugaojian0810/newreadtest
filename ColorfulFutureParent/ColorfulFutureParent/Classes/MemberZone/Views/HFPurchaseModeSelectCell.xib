@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="aryuangb_bd.ttf">
+            <string>ARYuanGB-BD</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="79" id="KGk-i7-Jjw" customClass="HFPurchaseModeSelectCell" customModule="柒彩未来" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="487" height="79"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="487" height="79"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_weixin" translatesAutoresizingMaskIntoConstraints="NO" id="v4B-nR-zdK">
+                        <rect key="frame" x="20" y="23.5" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="14Q-uH-jGq"/>
+                            <constraint firstAttribute="width" constant="32" id="flL-dc-Vlk"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="微信支付" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OoE-hO-vTQ">
+                        <rect key="frame" x="62" y="32" width="60" height="15"/>
+                        <fontDescription key="fontDescription" name="ARYuanGB-BD" family="AR YuanGB" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nwQ-Ru-eoU">
+                        <rect key="frame" x="435" y="28.5" width="22" height="22"/>
+                        <state key="normal" image="member_noSelected"/>
+                        <state key="selected" image="member_selected"/>
+                        <connections>
+                            <action selector="selectBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="hqj-ci-eY3"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="nwQ-Ru-eoU" secondAttribute="trailing" constant="30" id="LEQ-5f-WPD"/>
+                    <constraint firstItem="OoE-hO-vTQ" firstAttribute="centerY" secondItem="v4B-nR-zdK" secondAttribute="centerY" id="PUR-85-V6Z"/>
+                    <constraint firstItem="v4B-nR-zdK" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="QQK-yW-bji"/>
+                    <constraint firstItem="OoE-hO-vTQ" firstAttribute="leading" secondItem="v4B-nR-zdK" secondAttribute="trailing" constant="10" id="b11-H1-GL2"/>
+                    <constraint firstItem="v4B-nR-zdK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="jRl-yE-dgF"/>
+                    <constraint firstItem="nwQ-Ru-eoU" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="m1f-kJ-cqh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="img" destination="v4B-nR-zdK" id="TuS-Kq-6we"/>
+                <outlet property="selBtn" destination="nwQ-Ru-eoU" id="zCt-Dp-fSZ"/>
+                <outlet property="tipLabel" destination="OoE-hO-vTQ" id="z9l-W7-KT4"/>
+            </connections>
+            <point key="canvasLocation" x="204" y="121"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_weixin" width="25" height="25"/>
+        <image name="member_noSelected" width="22" height="22"/>
+        <image name="member_selected" width="22" height="22"/>
+    </resources>
+</document>

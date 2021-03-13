@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HFSelectHeaderImageViewController" customModule="柒彩未来" customModuleProvider="target">
+            <connections>
+                <outlet property="bgView" destination="X72-4o-RiG" id="bxl-vM-6c1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X72-4o-RiG">
+                    <rect key="frame" x="0.0" y="477" width="375" height="190"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="loH-B5-p78">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="59"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="59" id="L3j-ob-HyB"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="拍一张">
+                                <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="takingPictures:" destination="-1" eventType="touchUpInside" id="wX9-yy-C6T"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ubb-kA-MhU">
+                            <rect key="frame" x="0.0" y="59.5" width="375" height="59"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="59" id="sbO-r2-gUM"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="从相册选择">
+                                <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="selectPhoto:" destination="-1" eventType="touchUpInside" id="4OB-PA-bQF"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EHg-oM-iVx">
+                            <rect key="frame" x="0.0" y="131" width="375" height="59"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="59" id="q5H-jd-K4R"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="取消">
+                                <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="cancel:" destination="-1" eventType="touchUpInside" id="ywz-Ku-yaf"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="loH-B5-p78" firstAttribute="top" secondItem="X72-4o-RiG" secondAttribute="top" id="6R8-fe-8qF"/>
+                        <constraint firstAttribute="trailing" secondItem="EHg-oM-iVx" secondAttribute="trailing" id="6vp-3a-m1A"/>
+                        <constraint firstAttribute="trailing" secondItem="loH-B5-p78" secondAttribute="trailing" id="BnB-zq-g5A"/>
+                        <constraint firstItem="Ubb-kA-MhU" firstAttribute="leading" secondItem="X72-4o-RiG" secondAttribute="leading" id="GA0-fC-BgO"/>
+                        <constraint firstItem="EHg-oM-iVx" firstAttribute="leading" secondItem="X72-4o-RiG" secondAttribute="leading" id="Lfl-f7-jMy"/>
+                        <constraint firstAttribute="trailing" secondItem="Ubb-kA-MhU" secondAttribute="trailing" id="N88-e5-1jt"/>
+                        <constraint firstItem="loH-B5-p78" firstAttribute="leading" secondItem="X72-4o-RiG" secondAttribute="leading" id="Qtj-ip-L6A"/>
+                        <constraint firstAttribute="height" constant="190" id="SWd-xv-OoU"/>
+                        <constraint firstItem="Ubb-kA-MhU" firstAttribute="top" secondItem="loH-B5-p78" secondAttribute="bottom" constant="0.5" id="TMg-Wo-C9S"/>
+                        <constraint firstAttribute="bottom" secondItem="EHg-oM-iVx" secondAttribute="bottom" id="gN1-iX-hah"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="X72-4o-RiG" secondAttribute="trailing" id="BLV-X4-tu3"/>
+                <constraint firstAttribute="bottom" secondItem="X72-4o-RiG" secondAttribute="bottom" id="Iou-tV-Uhl"/>
+                <constraint firstItem="X72-4o-RiG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="pSR-Ox-srH"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="138.40000000000001" y="120.98950524737631"/>
+        </view>
+    </objects>
+</document>

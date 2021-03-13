@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="aryuangb_bd.ttf">
+            <string>ARYuanGB-BD</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="HFBabySectionHeaderView" customModule="柒彩未来" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="63"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="63"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ttj-Ht-FXN">
+                        <rect key="frame" x="15" y="23.5" width="3.5" height="16"/>
+                        <color key="backgroundColor" red="0.011764705882352941" green="0.74509803921568629" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="3.5" id="4TN-B2-Qhd"/>
+                            <constraint firstAttribute="height" constant="16" id="i5g-DW-RRd"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="宝宝信息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PlP-76-jvY">
+                        <rect key="frame" x="25" y="22.5" width="280" height="18"/>
+                        <fontDescription key="fontDescription" name="ARYuanGB-BD" family="AR YuanGB" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="PlP-76-jvY" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="6dP-29-WhE"/>
+                    <constraint firstItem="PlP-76-jvY" firstAttribute="leading" secondItem="ttj-Ht-FXN" secondAttribute="trailing" constant="6.4000000000000004" id="Gsh-Gu-VNF"/>
+                    <constraint firstItem="ttj-Ht-FXN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="XiB-Bl-moq"/>
+                    <constraint firstItem="ttj-Ht-FXN" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="iGN-Lh-dpd"/>
+                    <constraint firstAttribute="trailing" secondItem="PlP-76-jvY" secondAttribute="trailing" constant="15" id="meK-BT-Dp6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="titleLabel" destination="PlP-76-jvY" id="h7x-i4-yb5"/>
+                <outlet property="vLineView" destination="ttj-Ht-FXN" id="7ed-cW-bcp"/>
+            </connections>
+            <point key="canvasLocation" x="34.782608695652179" y="84.375"/>
+        </tableViewCell>
+    </objects>
+</document>

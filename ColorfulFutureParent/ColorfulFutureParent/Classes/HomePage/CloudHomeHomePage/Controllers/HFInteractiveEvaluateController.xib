@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="aryuangb_bd.ttf">
+            <string>ARYuanGB-BD</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HFInteractiveEvaluateController" customModule="柒彩未来" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomConstraint" destination="4vl-Ub-cAQ" id="D2s-AE-ugA"/>
+                <outlet property="submitBtn" destination="Clz-qf-RXV" id="a8d-Vs-7pA"/>
+                <outlet property="tableView" destination="BYu-Oa-nqu" id="gNF-7x-qLN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BYu-Oa-nqu">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="FuS-bo-op9"/>
+                        <outlet property="delegate" destination="-1" id="AED-Wv-tl8"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Clz-qf-RXV">
+                    <rect key="frame" x="0.0" y="802" width="414" height="60"/>
+                    <color key="backgroundColor" red="0.015686274509803921" green="0.74901960784313726" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="yLb-rC-VkE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="ARYuanGB-BD" family="AR YuanGB" pointSize="18"/>
+                    <state key="normal" title="提交">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="submitAction:" destination="-1" eventType="touchUpInside" id="RgM-MD-dx1"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="BYu-Oa-nqu" secondAttribute="bottom" id="4vl-Ub-cAQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="BYu-Oa-nqu" secondAttribute="trailing" id="8DZ-Cx-D2m"/>
+                <constraint firstItem="BYu-Oa-nqu" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="J9O-6t-KyM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Clz-qf-RXV" secondAttribute="bottom" id="MOm-uI-Kzc"/>
+                <constraint firstItem="BYu-Oa-nqu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="O55-Sf-W27"/>
+                <constraint firstAttribute="trailing" secondItem="Clz-qf-RXV" secondAttribute="trailing" id="SwH-n3-0IZ"/>
+                <constraint firstItem="Clz-qf-RXV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="xS0-Eh-DxQ"/>
+            </constraints>
+            <point key="canvasLocation" x="97" y="67"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

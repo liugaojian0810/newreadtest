@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="aryuangb_bd.ttf">
+            <string>ARYuanGB-BD</string>
+        </array>
+        <array key="aryuangb_md.ttf">
+            <string>ARYuanGB-MD</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="45" id="KGk-i7-Jjw" customClass="HFOrderItemCell" customModule="柒彩未来" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="513" height="45"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="513" height="45"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="god-oG-dIt">
+                        <rect key="frame" x="31" y="12" width="26" height="14"/>
+                        <fontDescription key="fontDescription" name="ARYuanGB-MD" family="AR YuanGB" pointSize="14"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="des" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8U-HW-sWv">
+                        <rect key="frame" x="61" y="12" width="402" height="14"/>
+                        <fontDescription key="fontDescription" name="ARYuanGB-BD" family="AR YuanGB" pointSize="14"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_icon_right" translatesAutoresizingMaskIntoConstraints="NO" id="fGj-J4-q5E">
+                        <rect key="frame" x="467" y="11.5" width="15" height="15"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="g8U-HW-sWv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="Ana-9p-QZo"/>
+                    <constraint firstItem="god-oG-dIt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="Ei1-KF-EBi"/>
+                    <constraint firstItem="g8U-HW-sWv" firstAttribute="leading" secondItem="god-oG-dIt" secondAttribute="trailing" constant="4" id="HIU-IC-Y7l"/>
+                    <constraint firstAttribute="trailing" secondItem="fGj-J4-q5E" secondAttribute="trailing" constant="31" id="K4M-De-T8e"/>
+                    <constraint firstItem="god-oG-dIt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="31" id="UOk-16-km8"/>
+                    <constraint firstAttribute="trailing" secondItem="g8U-HW-sWv" secondAttribute="trailing" constant="50" id="iai-kC-Zb9"/>
+                    <constraint firstItem="fGj-J4-q5E" firstAttribute="centerY" secondItem="g8U-HW-sWv" secondAttribute="centerY" id="ptm-wb-xJu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="arrowImgView" destination="fGj-J4-q5E" id="TtZ-wL-AVN"/>
+                <outlet property="desLab" destination="g8U-HW-sWv" id="6RK-FO-iNe"/>
+                <outlet property="desRightConstraint" destination="iai-kC-Zb9" id="xHF-mD-q5Q"/>
+                <outlet property="titleLab" destination="god-oG-dIt" id="ip5-Rv-lNz"/>
+            </connections>
+            <point key="canvasLocation" x="151.44927536231884" y="100.11160714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow_icon_right" width="15" height="15"/>
+    </resources>
+</document>

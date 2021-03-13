@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="aryuangb_bd.ttf">
+            <string>ARYuanGB-BD</string>
+        </array>
+        <array key="aryuangb_md.ttf">
+            <string>ARYuanGB-MD</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HFFiveColorsGemstoneProtocolViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="gemsLabel" destination="WyE-Zm-kke" id="SPs-0s-JDz"/>
+                <outletCollection property="gemsLabel" destination="7fE-Ac-QNL" id="PUF-ZI-Ofb"/>
+                <outletCollection property="gemsLabel" destination="MeP-tr-8hs" id="Vdx-jw-ZU2"/>
+                <outletCollection property="listViewArr" destination="U2A-Mc-R5b" id="Q7Y-2w-CcK"/>
+                <outletCollection property="listViewArr" destination="U6l-u3-ptJ" id="ljI-aC-eTt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Zg-c0-AjK">
+                    <rect key="frame" x="103" y="91.5" width="461" height="252"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qMA-vn-x4r">
+                            <rect key="frame" x="28" y="34" width="405" height="183"/>
+                            <subviews>
+                                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="pXW-bj-pPR">
+                                    <rect key="frame" x="0.0" y="0.0" width="405" height="183"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d0x-h9-7Jx">
+                                            <rect key="frame" x="0.0" y="0.0" width="405" height="460"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="什么是五彩宝石" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WyE-Zm-kke">
+                                                    <rect key="frame" x="10" y="10" width="120" height="23"/>
+                                                    <color key="backgroundColor" red="0.93725490199999995" green="0.66666666669999997" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="23" id="bF6-ZA-FP8"/>
+                                                        <constraint firstAttribute="width" constant="120" id="eMN-VJ-Lhi"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="ARYuanGB-BD" family="AR YuanGB" pointSize="14"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <real key="value" value="11.5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="五彩宝石，是宝宝在柒彩未来平台上获得的奖励，也是宝宝成长进步的见证。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Q3-95-vTt">
+                                                    <rect key="frame" x="10" y="43" width="385" height="24"/>
+                                                    <fontDescription key="fontDescription" name="ARYuanGB-MD" family="AR YuanGB" pointSize="12"/>
+                                                    <color key="textColor" red="0.83137254901960778" green="0.63137254901960782" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="如何获得宝石" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7fE-Ac-QNL">
+                                                    <rect key="frame" x="10" y="82" width="120" height="23"/>
+                                                    <color key="backgroundColor" red="0.93725490199999995" green="0.66666666669999997" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="120" id="odq-RJ-6h3"/>
+                                                        <constraint firstAttribute="height" constant="23" id="ulF-CJ-9sS"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="ARYuanGB-BD" family="AR YuanGB" pointSize="14"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <real key="value" value="11.5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U2A-Mc-R5b">
+                                                    <rect key="frame" x="10" y="115" width="385" height="224"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C6i-8W-tKG">
+                                                            <rect key="frame" x="0.0" y="0.0" width="385" height="32"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="获得宝石行为" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eNQ-D5-N2e">
+                                                                    <rect key="frame" x="10" y="9" width="84" height="14"/>
+                                                                    <fontDescription key="fontDescription" name="ARYuanGB-BD" family="AR YuanGB" pointSize="14"/>
+                                                                    <color key="textColor" red="0.56470588235294117" green="0.31372549019607843" blue="0.11372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YfF-AB-tqy">
+                                                                    <rect key="frame" x="133" y="0.0" width="0.5" height="32"/>
+                                                                    <color key="backgroundColor" red="0.94509803921568625" green="0.78431372549019607" blue="0.52549019607843139" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="0.5" id="5f6-pN-XuX"/>
+                                                                    </constraints>
+                                                                </view>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="宝石数量" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eca-Cy-St5">
+                                                                    <rect key="frame" x="171.5" y="9" width="56" height="14"/>
+                                                                    <fontDescription key="fontDescription" name="ARYuanGB-BD" family="AR YuanGB" pointSize="14"/>
+                                                                    <color key="textColor" red="0.56470588239999997" green="0.31372549020000001" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="eca-Cy-St5" firstAttribute="centerY" secondItem="eNQ-D5-N2e" secondAttribute="centerY" id="TNA-Af-VnG"/>
+                                                                <constraint firstItem="YfF-AB-tqy" firstAttribute="top" secondItem="C6i-8W-tKG" secondAttribute="top" id="bxb-uK-i0e"/>
+                                                                <constraint firstItem="eNQ-D5-N2e" firstAttribute="leading" secondItem="C6i-8W-tKG" secondAttribute="leading" constant="10" id="cWe-kl-cjZ"/>
+                                                                <constraint firstItem="eNQ-D5-N2e" firstAttribute="centerY" secondItem="C6i-8W-tKG" secondAttribute="centerY" id="hIv-Nk-Gkk"/>
+                                                                <constraint firstItem="eca-Cy-St5" firstAttribute="leading" secondItem="YfF-AB-tqy" secondAttribute="trailing" constant="38" id="oYi-rX-vnm"/>
+                                                                <constraint firstAttribute="height" constant="32" id="uLA-gG-rVb"/>
+                                                                <constraint firstItem="YfF-AB-tqy" firstAttribute="leading" secondItem="C6i-8W-tKG" secondAttribute="leading" constant="133" id="w1C-fH-LBJ"/>
+                                                                <constraint firstAttribute="bottom" secondItem="YfF-AB-tqy" secondAttribute="bottom" id="wK8-Ua-e3J"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Rw-hF-MSB">
+                                                            <rect key="frame" x="1" y="32" width="383" height="31"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jyK-7B-4YN">
+                                                                    <rect key="frame" x="174" y="8.5" width="8" height="14"/>
+                                                                    <fontDescription key="fontDescription" name="ARYuanGB-BD" family="AR YuanGB" pointSize="14"/>
+                                                                    <color key="textColor" red="0.56470588239999997" green="0.31372549020000001" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="登录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a4S-if-Zxn">
+                                                                    <rect key="frame" x="9" y="9" width="26.5" height="13"/>
+                                                                    <fontDescription key="fontDescription" name="ARYuanGB-BD" family="AR YuanGB" pointSize="13"/>
+                                                                    <color key="textColor" red="0.83137254901960778" green="0.63137254901960782" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                            <constraints>
+                                                                <constraint firstItem="a4S-if-Zxn" firstAttribute="centerY" secondItem="1Rw-hF-MSB" secondAttribute="centerY" id="DMO-0z-MvM"/>
+                                                                <constraint firstAttribute="height" constant="31" id="aFv-ql-Eo0"/>
+                                                                <constraint firstItem="jyK-7B-4YN" firstAttribute="centerY" secondItem="1Rw-hF-MSB" secondAttribute="centerY" id="ivf-aD-HZ4"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kfy-CN-iQv">
+                                                            <rect key="frame" x="1" y="64" width="383" height="31"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hze-X4-BfH">
+                                                                    <rect key="frame" x="174" y="8.5" width="8" height="14"/>
+                                                                    <fontDescription key="fontDescription" name="ARYuanGB-BD" family="AR YuanGB" pointSize="14"/>
+                                                                    <color key="textColor" red="0.56470588239999997" green="0.31372549020000001" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="预约" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YC1-cy-Rlt">
+                                                                    <rect key="frame" x="9" y="9" width="26.5" height="13"/>
+                                                                    <fontDescription key="fontDescription" name="ARYuanGB-BD" family="AR YuanGB" pointSize="13"/>
+                                                                    <color key="textColor" red="0.83137254900000002" green="0.63137254899999995" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="31" id="eaD-WA-Cnx"/>
+                                                                <constraint firstItem="Hze-X4-BfH" firstAttribute="leading" secondItem="Kfy-CN-iQv" secondAttribute="leading" constant="174" id="jOA-Zc-fkV"/>
+                                                                <constraint firstItem="YC1-cy-Rlt" firstAttribute="centerY" secondItem="Kfy-CN-iQv" secondAttribute="centerY" id="jaY-8p-Q8J"/>
+                                                                <constraint firstItem="Hze-X4-BfH" firstAttribute="centerY" secondItem="Kfy-CN-iQv" secondAttribute="centerY" id="kiU-an-ML1"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TQ9-DJ-mjH">
+                                                            <rect key="frame" x="1" y="96" width="383" height="31"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdW-Kf-lVH">
+                                                                    <rect key="frame" x="174" y="8.5" width="9" height="14"/>
+                                                                    <fontDescription key="fontDescription" name="ARYuanGB-BD" family="AR YuanGB" pointSize="14"/>
+                                                                    <color key="textColor" red="0.56470588239999997" green="0.31372549020000001" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="不迟到" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2vy-cn-IIN">
+                                                                    <rect key="frame" x="9" y="9" width="39.5" height="13"/>
+                                                                    <fontDescription key="fontDescription" name="ARYuanGB-BD" family="AR YuanGB" pointSize="13"/>
+                                                                    <color key="textColor" red="0.83137254900000002" green="0.63137254899999995" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                            <constraints>
+                                                                <constraint firstItem="gdW-Kf-lVH" firstAttribute="leading" secondItem="TQ9-DJ-mjH" secondAttribute="leading" constant="174" id="BgX-dy-Xte"/>
+                                                                <constraint firstItem="gdW-Kf-lVH" firstAttribute="centerY" secondItem="TQ9-DJ-mjH" secondAttribute="centerY" id="DdR-eP-ii6"/>
+                                                                <constraint firstItem="2vy-cn-IIN" firstAttribute="centerY" secondItem="TQ9-DJ-mjH" secondAttribute="centerY" id="Vs8-Si-grd"/>
+                                                                <constraint firstAttribute="height" constant="31" id="oQf-Pr-zje"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ROO-Bq-iqn">
+                                                            <rect key="frame" x="1" y="128" width="383" height="31"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="题目不同数量不同" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QOU-E3-DxG">
+                                                                    <rect key="frame" x="174" y="8.5" width="112" height="14"/>
+                                                                    <fontDescription key="fontDescription" name="ARYuanGB-BD" family="AR YuanGB" pointSize="14"/>
+                                                                    <color key="textColor" red="0.56470588239999997" green="0.31372549020000001" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="参与开麦互动" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HWV-P2-hIT">
+                                                                    <rect key="frame" x="9" y="9" width="78.5" height="13"/>
+                                                                    <fontDescription key="fontDescription" name="ARYuanGB-BD" family="AR YuanGB" pointSize="13"/>
+                                                                    <color key="textColor" red="0.83137254900000002" green="0.63137254899999995" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                            <constraints>
+                                                                <constraint firstItem="QOU-E3-DxG" firstAttribute="centerY" secondItem="ROO-Bq-iqn" secondAttribute="centerY" id="1bU-ER-AH5"/>
+                                                                <constraint firstItem="QOU-E3-DxG" firstAttribute="leading" secondItem="ROO-Bq-iqn" secondAttribute="leading" constant="174" id="HO4-jJ-KbX"/>
+                                                                <constraint firstItem="HWV-P2-hIT" firstAttribute="centerY" secondItem="ROO-Bq-iqn" secondAttribute="centerY" id="W6X-bE-BoK"/>
+                                                                <constraint firstAttribute="height" constant="31" id="Zws-eM-NdV"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ChF-al-PT8">
+                                                            <rect key="frame" x="1" y="160" width="383" height="31"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="题目不同，答案不同数量不同" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vyC-Rc-LCe">
+                                                                    <rect key="frame" x="174" y="8.5" width="182" height="14"/>
+                                                                    <fontDescription key="fontDescription" name="ARYuanGB-BD" family="AR YuanGB" pointSize="14"/>
+                                                                    <color key="textColor" red="0.56470588239999997" green="0.31372549020000001" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="参与触屏互动" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VH9-G6-uRK">
+                                                                    <rect key="frame" x="9" y="9" width="78.5" height="13"/>
+                                                                    <fontDescription key="fontDescription" name="ARYuanGB-BD" family="AR YuanGB" pointSize="13"/>
+                                                                    <color key="textColor" red="0.83137254900000002" green="0.63137254899999995" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                            <constraints>
+                                                                <constraint firstItem="vyC-Rc-LCe" firstAttribute="centerY" secondItem="ChF-al-PT8" secondAttribute="centerY" id="G4a-1U-k9r"/>
+                                                                <constraint firstItem="VH9-G6-uRK" firstAttribute="centerY" secondItem="ChF-al-PT8" secondAttribute="centerY" id="VIZ-za-NFc"/>
+                                                                <constraint firstItem="vyC-Rc-LCe" firstAttribute="leading" secondItem="ChF-al-PT8" secondAttribute="leading" constant="174" id="YjS-oC-CeV"/>
+                                                                <constraint firstAttribute="height" constant="31" id="qg1-zh-yta"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wm6-M8-RoE">
+                                                            <rect key="frame" x="1" y="192" width="383" height="31"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="每节课全勤" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y11-3L-Irk">
+                                                                    <rect key="frame" x="174" y="8.5" width="70" height="14"/>
+                                                                    <fontDescription key="fontDescription" name="ARYuanGB-BD" family="AR YuanGB" pointSize="14"/>
+                                                                    <color key="textColor" red="0.56470588239999997" green="0.31372549020000001" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="每节课全勤" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g5d-n8-1wt">
+                                                                    <rect key="frame" x="9" y="9" width="65.5" height="13"/>
+                                                                    <fontDescription key="fontDescription" name="ARYuanGB-BD" family="AR YuanGB" pointSize="13"/>
+                                                                    <color key="textColor" red="0.83137254900000002" green="0.63137254899999995" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                            <constraints>
+                                                                <constraint firstItem="Y11-3L-Irk" firstAttribute="centerY" secondItem="wm6-M8-RoE" secondAttribute="centerY" id="1a9-Tw-Cpw"/>
+                                                                <constraint firstItem="g5d-n8-1wt" firstAttribute="centerY" secondItem="wm6-M8-RoE" secondAttribute="centerY" id="MY9-FR-L5V"/>
+                                                                <constraint firstItem="Y11-3L-Irk" firstAttribute="leading" secondItem="wm6-M8-RoE" secondAttribute="leading" constant="174" id="cZg-nJ-BHM"/>
+                                                                <constraint firstAttribute="height" constant="31" id="eL0-n4-rEe"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="1" green="0.88627450980392153" blue="0.69803921568627447" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="C6i-8W-tKG" firstAttribute="top" secondItem="U2A-Mc-R5b" secondAttribute="top" id="1dv-R3-oRh"/>
+                                                        <constraint firstAttribute="height" constant="224" id="478-6w-Bdu"/>
+                                                        <constraint firstItem="Kfy-CN-iQv" firstAttribute="leading" secondItem="U2A-Mc-R5b" secondAttribute="leading" constant="1" id="6WA-sa-aVL"/>
+                                                        <constraint firstItem="ChF-al-PT8" firstAttribute="top" secondItem="ROO-Bq-iqn" secondAttribute="bottom" constant="1" id="Dee-dK-G4C"/>
+                                                        <constraint firstItem="ChF-al-PT8" firstAttribute="leading" secondItem="U2A-Mc-R5b" secondAttribute="leading" constant="1" id="Fob-DN-wM2"/>
+                                                        <constraint firstAttribute="trailing" secondItem="TQ9-DJ-mjH" secondAttribute="trailing" constant="1" id="GVh-aT-Jqw"/>
+                                                        <constraint firstItem="wm6-M8-RoE" firstAttribute="leading" secondItem="U2A-Mc-R5b" secondAttribute="leading" constant="1" id="HZA-Co-0Br"/>
+                                                        <constraint firstItem="VH9-G6-uRK" firstAttribute="leading" secondItem="a4S-if-Zxn" secondAttribute="leading" id="NTD-7K-e03"/>
+                                                        <constraint firstItem="wm6-M8-RoE" firstAttribute="top" secondItem="ChF-al-PT8" secondAttribute="bottom" constant="1" id="S9M-0t-JaN"/>
+                                                        <constraint firstItem="TQ9-DJ-mjH" firstAttribute="top" secondItem="Kfy-CN-iQv" secondAttribute="bottom" constant="1" id="SGF-Tc-tZd"/>
+                                                        <constraint firstItem="YC1-cy-Rlt" firstAttribute="leading" secondItem="a4S-if-Zxn" secondAttribute="leading" id="UAI-0F-feg"/>
+                                                        <constraint firstItem="a4S-if-Zxn" firstAttribute="leading" secondItem="eNQ-D5-N2e" secondAttribute="leading" id="V5q-7I-SXb"/>
+                                                        <constraint firstAttribute="trailing" secondItem="ChF-al-PT8" secondAttribute="trailing" constant="1" id="VmU-6a-GQI"/>
+                                                        <constraint firstAttribute="trailing" secondItem="1Rw-hF-MSB" secondAttribute="trailing" constant="1" id="Vp1-aj-HY5"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Kfy-CN-iQv" secondAttribute="trailing" constant="1" id="Yw6-Md-afn"/>
+                                                        <constraint firstAttribute="trailing" secondItem="wm6-M8-RoE" secondAttribute="trailing" constant="1" id="aLr-7r-hwM"/>
+                                                        <constraint firstItem="2vy-cn-IIN" firstAttribute="leading" secondItem="a4S-if-Zxn" secondAttribute="leading" id="ahT-78-P9o"/>
+                                                        <constraint firstAttribute="trailing" secondItem="C6i-8W-tKG" secondAttribute="trailing" id="b7Y-Ej-M0E"/>
+                                                        <constraint firstItem="TQ9-DJ-mjH" firstAttribute="leading" secondItem="U2A-Mc-R5b" secondAttribute="leading" constant="1" id="chE-wd-PhC"/>
+                                                        <constraint firstItem="ROO-Bq-iqn" firstAttribute="leading" secondItem="U2A-Mc-R5b" secondAttribute="leading" constant="1" id="d4k-a7-r0k"/>
+                                                        <constraint firstItem="jyK-7B-4YN" firstAttribute="leading" secondItem="YfF-AB-tqy" secondAttribute="leading" constant="42" id="gih-kU-RIe"/>
+                                                        <constraint firstItem="1Rw-hF-MSB" firstAttribute="leading" secondItem="U2A-Mc-R5b" secondAttribute="leading" constant="1" id="grI-uG-cvm"/>
+                                                        <constraint firstItem="1Rw-hF-MSB" firstAttribute="top" secondItem="C6i-8W-tKG" secondAttribute="bottom" id="gtQ-XH-2dB"/>
+                                                        <constraint firstAttribute="trailing" secondItem="ROO-Bq-iqn" secondAttribute="trailing" constant="1" id="hPs-OZ-xjB"/>
+                                                        <constraint firstItem="C6i-8W-tKG" firstAttribute="leading" secondItem="U2A-Mc-R5b" secondAttribute="leading" id="k6Q-jT-h8q"/>
+                                                        <constraint firstItem="HWV-P2-hIT" firstAttribute="leading" secondItem="a4S-if-Zxn" secondAttribute="leading" id="kRL-dN-ZAj"/>
+                                                        <constraint firstItem="ROO-Bq-iqn" firstAttribute="top" secondItem="TQ9-DJ-mjH" secondAttribute="bottom" constant="1" id="oFN-af-3aK"/>
+                                                        <constraint firstItem="g5d-n8-1wt" firstAttribute="leading" secondItem="a4S-if-Zxn" secondAttribute="leading" id="wC0-dw-zJ6"/>
+                                                        <constraint firstItem="Kfy-CN-iQv" firstAttribute="top" secondItem="1Rw-hF-MSB" secondAttribute="bottom" constant="1" id="ywc-31-4Of"/>
+                                                    </constraints>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="什么情况扣除宝石" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MeP-tr-8hs">
+                                                    <rect key="frame" x="11" y="354" width="120" height="23"/>
+                                                    <color key="backgroundColor" red="0.93725490199999995" green="0.66666666669999997" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="120" id="6kX-MB-Mjr"/>
+                                                        <constraint firstAttribute="height" constant="23" id="sTe-kk-NaT"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="ARYuanGB-BD" family="AR YuanGB" pointSize="14"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <real key="value" value="11.5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U6l-u3-ptJ">
+                                                    <rect key="frame" x="10" y="387" width="385" height="64"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IJX-jf-cGx">
+                                                            <rect key="frame" x="0.0" y="0.0" width="385" height="32"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="扣除宝石行为" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GMy-na-dqa">
+                                                                    <rect key="frame" x="10" y="9" width="84" height="14"/>
+                                                                    <fontDescription key="fontDescription" name="ARYuanGB-BD" family="AR YuanGB" pointSize="14"/>
+                                                                    <color key="textColor" red="0.56470588239999997" green="0.31372549020000001" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UPR-tO-5II">
+                                                                    <rect key="frame" x="133" y="0.0" width="0.5" height="32"/>
+                                                                    <color key="backgroundColor" red="0.94509803920000002" green="0.7843137255" blue="0.52549019610000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="0.5" id="reG-or-fqf"/>
+                                                                    </constraints>
+                                                                </view>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="扣除数量" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LNJ-fc-mUO">
+                                                                    <rect key="frame" x="171.5" y="9" width="56" height="14"/>
+                                                                    <fontDescription key="fontDescription" name="ARYuanGB-BD" family="AR YuanGB" pointSize="14"/>
+                                                                    <color key="textColor" red="0.56470588239999997" green="0.31372549020000001" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="GMy-na-dqa" firstAttribute="centerY" secondItem="IJX-jf-cGx" secondAttribute="centerY" id="7cs-Cb-JIH"/>
+                                                                <constraint firstItem="UPR-tO-5II" firstAttribute="leading" secondItem="IJX-jf-cGx" secondAttribute="leading" constant="133" id="Erq-lZ-NHX"/>
+                                                                <constraint firstItem="LNJ-fc-mUO" firstAttribute="leading" secondItem="UPR-tO-5II" secondAttribute="trailing" constant="38" id="Px6-dE-yj4"/>
+                                                                <constraint firstAttribute="height" constant="32" id="UDY-4v-rUs"/>
+                                                                <constraint firstItem="UPR-tO-5II" firstAttribute="top" secondItem="IJX-jf-cGx" secondAttribute="top" id="WWi-WT-efp"/>
+                                                                <constraint firstAttribute="bottom" secondItem="UPR-tO-5II" secondAttribute="bottom" id="YWp-DR-osm"/>
+                                                                <constraint firstItem="LNJ-fc-mUO" firstAttribute="centerY" secondItem="GMy-na-dqa" secondAttribute="centerY" id="c4i-pa-T4G"/>
+                                                                <constraint firstItem="GMy-na-dqa" firstAttribute="leading" secondItem="IJX-jf-cGx" secondAttribute="leading" constant="10" id="dxh-io-wGY"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eiL-aJ-qY4">
+                                                            <rect key="frame" x="1" y="32" width="383" height="31"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NPj-rT-k1B">
+                                                                    <rect key="frame" x="174" y="8.5" width="9" height="14"/>
+                                                                    <fontDescription key="fontDescription" name="ARYuanGB-BD" family="AR YuanGB" pointSize="14"/>
+                                                                    <color key="textColor" red="0.56470588239999997" green="0.31372549020000001" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="家长预约成功后取消" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJF-KS-TvG">
+                                                                    <rect key="frame" x="9" y="9" width="117.5" height="13"/>
+                                                                    <fontDescription key="fontDescription" name="ARYuanGB-BD" family="AR YuanGB" pointSize="13"/>
+                                                                    <color key="textColor" red="0.83137254900000002" green="0.63137254899999995" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                            <constraints>
+                                                                <constraint firstItem="vJF-KS-TvG" firstAttribute="centerY" secondItem="eiL-aJ-qY4" secondAttribute="centerY" id="ECW-xi-dVL"/>
+                                                                <constraint firstItem="NPj-rT-k1B" firstAttribute="centerY" secondItem="eiL-aJ-qY4" secondAttribute="centerY" id="RBF-sd-lea"/>
+                                                                <constraint firstAttribute="height" constant="31" id="zx7-gt-PoP"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="1" green="0.8862745098" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="IJX-jf-cGx" firstAttribute="leading" secondItem="U6l-u3-ptJ" secondAttribute="leading" id="58N-V1-hGe"/>
+                                                        <constraint firstItem="vJF-KS-TvG" firstAttribute="leading" secondItem="GMy-na-dqa" secondAttribute="leading" id="766-gu-92E"/>
+                                                        <constraint firstAttribute="trailing" secondItem="eiL-aJ-qY4" secondAttribute="trailing" constant="1" id="JqQ-zu-c5r"/>
+                                                        <constraint firstAttribute="trailing" secondItem="IJX-jf-cGx" secondAttribute="trailing" id="NTQ-W3-gLC"/>
+                                                        <constraint firstItem="NPj-rT-k1B" firstAttribute="leading" secondItem="UPR-tO-5II" secondAttribute="leading" constant="42" id="TY3-gs-9Q9"/>
+                                                        <constraint firstItem="IJX-jf-cGx" firstAttribute="top" secondItem="U6l-u3-ptJ" secondAttribute="top" id="ZR7-XM-ZL0"/>
+                                                        <constraint firstAttribute="height" constant="64" id="i5d-4Z-LNX"/>
+                                                        <constraint firstItem="eiL-aJ-qY4" firstAttribute="leading" secondItem="U6l-u3-ptJ" secondAttribute="leading" constant="1" id="iT3-BT-kLG"/>
+                                                        <constraint firstItem="eiL-aJ-qY4" firstAttribute="top" secondItem="IJX-jf-cGx" secondAttribute="bottom" id="jzv-zO-bxk"/>
+                                                    </constraints>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="什么是五彩宝石" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PBG-Bd-B79">
+                                                    <rect key="frame" x="10" y="10" width="120" height="23"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="23" id="QLp-5q-gTV"/>
+                                                        <constraint firstAttribute="width" constant="120" id="bWQ-yH-WeG"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="ARYuanGB-BD" family="AR YuanGB" pointSize="14"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <real key="value" value="11.5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="如何获得宝石" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DxX-ya-Gbq">
+                                                    <rect key="frame" x="10" y="82" width="120" height="23"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="120" id="NRE-0J-8Ux"/>
+                                                        <constraint firstAttribute="height" constant="23" id="hWZ-wg-AnN"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="ARYuanGB-BD" family="AR YuanGB" pointSize="14"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <real key="value" value="11.5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="什么情况扣除宝石" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7pn-ft-odI">
+                                                    <rect key="frame" x="11" y="354" width="120" height="23"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="23" id="4AB-5I-Pj0"/>
+                                                        <constraint firstAttribute="width" constant="120" id="Qvn-Ja-1zn"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="ARYuanGB-BD" family="AR YuanGB" pointSize="14"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <real key="value" value="11.5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            <constraints>
+                                                <constraint firstItem="7pn-ft-odI" firstAttribute="height" secondItem="MeP-tr-8hs" secondAttribute="height" id="0KM-NN-pzK"/>
+                                                <constraint firstItem="0Q3-95-vTt" firstAttribute="top" secondItem="WyE-Zm-kke" secondAttribute="bottom" constant="10" id="5bp-HQ-x0n"/>
+                                                <constraint firstItem="U6l-u3-ptJ" firstAttribute="leading" secondItem="d0x-h9-7Jx" secondAttribute="leading" constant="10" id="7Sl-oF-xKx"/>
+                                                <constraint firstAttribute="height" constant="460" id="9eH-S4-tOx"/>
+                                                <constraint firstItem="DxX-ya-Gbq" firstAttribute="width" secondItem="7fE-Ac-QNL" secondAttribute="width" id="B5Y-fq-T55"/>
+                                                <constraint firstItem="PBG-Bd-B79" firstAttribute="centerY" secondItem="WyE-Zm-kke" secondAttribute="centerY" id="FYM-LK-u5b"/>
+                                                <constraint firstItem="U2A-Mc-R5b" firstAttribute="top" secondItem="7fE-Ac-QNL" secondAttribute="bottom" constant="10" id="JHi-c5-REq"/>
+                                                <constraint firstAttribute="trailing" secondItem="U6l-u3-ptJ" secondAttribute="trailing" constant="10" id="JSV-1s-hWk"/>
+                                                <constraint firstAttribute="trailing" secondItem="0Q3-95-vTt" secondAttribute="trailing" constant="10" id="QF2-P7-Pcy"/>
+                                                <constraint firstItem="MeP-tr-8hs" firstAttribute="leading" secondItem="wm6-M8-RoE" secondAttribute="leading" id="Qa8-VZ-n92"/>
+                                                <constraint firstItem="7pn-ft-odI" firstAttribute="centerY" secondItem="MeP-tr-8hs" secondAttribute="centerY" id="TM5-Dk-lnM"/>
+                                                <constraint firstAttribute="trailing" secondItem="U2A-Mc-R5b" secondAttribute="trailing" constant="10" id="Zrp-l2-hNo"/>
+                                                <constraint firstItem="DxX-ya-Gbq" firstAttribute="height" secondItem="7fE-Ac-QNL" secondAttribute="height" id="bRZ-gv-0ih"/>
+                                                <constraint firstItem="PBG-Bd-B79" firstAttribute="height" secondItem="WyE-Zm-kke" secondAttribute="height" id="bf6-UG-PME"/>
+                                                <constraint firstItem="7pn-ft-odI" firstAttribute="centerX" secondItem="MeP-tr-8hs" secondAttribute="centerX" id="bnA-rq-n5C"/>
+                                                <constraint firstItem="U2A-Mc-R5b" firstAttribute="leading" secondItem="d0x-h9-7Jx" secondAttribute="leading" constant="10" id="cfA-pv-ZOr"/>
+                                                <constraint firstItem="U6l-u3-ptJ" firstAttribute="top" secondItem="MeP-tr-8hs" secondAttribute="bottom" constant="10" id="dhW-n0-PQY"/>
+                                                <constraint firstItem="DxX-ya-Gbq" firstAttribute="centerY" secondItem="7fE-Ac-QNL" secondAttribute="centerY" id="ffl-aU-qzu"/>
+                                                <constraint firstItem="DxX-ya-Gbq" firstAttribute="centerX" secondItem="7fE-Ac-QNL" secondAttribute="centerX" id="gbN-29-KE1"/>
+                                                <constraint firstItem="PBG-Bd-B79" firstAttribute="width" secondItem="WyE-Zm-kke" secondAttribute="width" id="hBF-oN-tJN"/>
+                                                <constraint firstItem="WyE-Zm-kke" firstAttribute="leading" secondItem="d0x-h9-7Jx" secondAttribute="leading" constant="10" id="iOv-L7-4bV"/>
+                                                <constraint firstItem="7fE-Ac-QNL" firstAttribute="leading" secondItem="WyE-Zm-kke" secondAttribute="leading" id="mYA-Bd-Djh"/>
+                                                <constraint firstItem="0Q3-95-vTt" firstAttribute="leading" secondItem="d0x-h9-7Jx" secondAttribute="leading" constant="10" id="nAU-un-Cwj"/>
+                                                <constraint firstItem="WyE-Zm-kke" firstAttribute="top" secondItem="d0x-h9-7Jx" secondAttribute="top" constant="10" id="pMy-Z1-a43"/>
+                                                <constraint firstItem="7pn-ft-odI" firstAttribute="width" secondItem="MeP-tr-8hs" secondAttribute="width" id="qtv-xm-1D9"/>
+                                                <constraint firstItem="MeP-tr-8hs" firstAttribute="top" secondItem="U2A-Mc-R5b" secondAttribute="bottom" constant="15" id="uVd-IQ-6BX"/>
+                                                <constraint firstItem="PBG-Bd-B79" firstAttribute="centerX" secondItem="WyE-Zm-kke" secondAttribute="centerX" id="xZF-Qm-ddb"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="d0x-h9-7Jx" firstAttribute="leading" secondItem="pXW-bj-pPR" secondAttribute="leading" id="1w6-eT-BnF"/>
+                                        <constraint firstAttribute="trailing" secondItem="d0x-h9-7Jx" secondAttribute="trailing" id="6HI-rS-WEb"/>
+                                        <constraint firstItem="d0x-h9-7Jx" firstAttribute="top" secondItem="pXW-bj-pPR" secondAttribute="top" id="aHx-Wv-tuC"/>
+                                        <constraint firstItem="d0x-h9-7Jx" firstAttribute="centerX" secondItem="pXW-bj-pPR" secondAttribute="centerX" id="ghz-3O-Hvf"/>
+                                        <constraint firstAttribute="bottom" secondItem="d0x-h9-7Jx" secondAttribute="bottom" id="sFk-EY-H4r"/>
+                                    </constraints>
+                                </scrollView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstItem="pXW-bj-pPR" firstAttribute="centerX" secondItem="qMA-vn-x4r" secondAttribute="centerX" id="Fob-nB-UBR"/>
+                                <constraint firstAttribute="trailing" secondItem="pXW-bj-pPR" secondAttribute="trailing" id="ebH-UK-CAc"/>
+                                <constraint firstItem="pXW-bj-pPR" firstAttribute="top" secondItem="qMA-vn-x4r" secondAttribute="top" id="qL4-8g-uuC"/>
+                                <constraint firstItem="pXW-bj-pPR" firstAttribute="leading" secondItem="qMA-vn-x4r" secondAttribute="leading" id="sZf-ep-Myz"/>
+                                <constraint firstAttribute="bottom" secondItem="pXW-bj-pPR" secondAttribute="bottom" id="vqH-I0-Knq"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="461" id="D9d-TL-Zdx"/>
+                        <constraint firstItem="7fE-Ac-QNL" firstAttribute="leading" secondItem="WyE-Zm-kke" secondAttribute="leading" id="Tgb-OE-F9f"/>
+                        <constraint firstAttribute="height" constant="252" id="iyd-5X-wnX"/>
+                        <constraint firstAttribute="bottom" secondItem="qMA-vn-x4r" secondAttribute="bottom" constant="35" id="o3g-hH-lL3"/>
+                        <constraint firstItem="qMA-vn-x4r" firstAttribute="leading" secondItem="5Zg-c0-AjK" secondAttribute="leading" constant="28" id="qZM-D5-Xed"/>
+                        <constraint firstAttribute="trailing" secondItem="qMA-vn-x4r" secondAttribute="trailing" constant="28" id="qaG-xw-Dew"/>
+                        <constraint firstItem="7fE-Ac-QNL" firstAttribute="top" secondItem="0Q3-95-vTt" secondAttribute="bottom" constant="15" id="vn4-dv-P9W"/>
+                        <constraint firstItem="qMA-vn-x4r" firstAttribute="top" secondItem="5Zg-c0-AjK" secondAttribute="top" constant="34" id="yZs-MG-QtA"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="5Zg-c0-AjK" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="30" id="6sV-vW-zck"/>
+                <constraint firstItem="5Zg-c0-AjK" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qFa-gj-XoX"/>
+            </constraints>
+            <point key="canvasLocation" x="138.98050974512745" y="116"/>
+        </view>
+    </objects>
+</document>

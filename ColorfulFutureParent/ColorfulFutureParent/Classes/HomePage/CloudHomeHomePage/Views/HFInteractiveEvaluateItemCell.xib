@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="aryuangb_bd.ttf">
+            <string>ARYuanGB-BD</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="37" id="KGk-i7-Jjw" customClass="HFInteractiveEvaluateItemCell" customModule="柒彩未来" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="365" height="37"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="365" height="37"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g4a-gY-fbg">
+                        <rect key="frame" x="229" y="9" width="101" height="19"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="beI-sc-K7b">
+                                <rect key="frame" x="0.0" y="0.0" width="101" height="19"/>
+                                <subviews>
+                                    <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fHp-3X-lIR">
+                                        <rect key="frame" x="0.0" y="0.0" width="19" height="19"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="19" id="ZQg-65-u05"/>
+                                            <constraint firstAttribute="width" constant="19" id="jFt-oH-jFl"/>
+                                        </constraints>
+                                        <state key="normal" image="cloud_home_interactive_camp_stars_gray"/>
+                                        <state key="selected" image="cloud_home_interactive_camp_stars_yellow"/>
+                                        <connections>
+                                            <action selector="click:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="499-GW-gEH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CK6-JF-Xw5">
+                                        <rect key="frame" x="20.5" y="0.0" width="19" height="19"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="19" id="wNH-OQ-3h8"/>
+                                            <constraint firstAttribute="height" constant="19" id="wXC-lZ-bGu"/>
+                                        </constraints>
+                                        <state key="normal" image="cloud_home_interactive_camp_stars_gray"/>
+                                        <state key="selected" image="cloud_home_interactive_camp_stars_yellow"/>
+                                        <connections>
+                                            <action selector="click:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="8nm-cD-E01"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y6q-Mj-U3u">
+                                        <rect key="frame" x="41" y="0.0" width="19" height="19"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="19" id="IUI-SS-aeW"/>
+                                            <constraint firstAttribute="width" constant="19" id="jKc-ir-Xdb"/>
+                                        </constraints>
+                                        <state key="normal" image="cloud_home_interactive_camp_stars_gray"/>
+                                        <state key="selected" image="cloud_home_interactive_camp_stars_yellow"/>
+                                        <connections>
+                                            <action selector="click:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="A8a-wn-SSG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mNX-C3-JoJ">
+                                        <rect key="frame" x="61.5" y="0.0" width="19" height="19"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="19" id="FNT-b7-JyV"/>
+                                            <constraint firstAttribute="width" constant="19" id="nFo-vk-XvI"/>
+                                        </constraints>
+                                        <state key="normal" image="cloud_home_interactive_camp_stars_gray"/>
+                                        <state key="selected" image="cloud_home_interactive_camp_stars_yellow"/>
+                                        <connections>
+                                            <action selector="click:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="zC3-xn-1ed"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="105" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sFe-wx-E6y">
+                                        <rect key="frame" x="82" y="0.0" width="19" height="19"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="19" id="ohr-tj-hBq"/>
+                                            <constraint firstAttribute="width" constant="19" id="olO-2R-IwE"/>
+                                        </constraints>
+                                        <state key="normal" image="cloud_home_interactive_camp_stars_gray"/>
+                                        <state key="selected" image="cloud_home_interactive_camp_stars_yellow"/>
+                                        <connections>
+                                            <action selector="click:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ccf-Ub-cur"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="beI-sc-K7b" secondAttribute="trailing" id="7CT-2I-n66"/>
+                            <constraint firstAttribute="bottom" secondItem="beI-sc-K7b" secondAttribute="bottom" id="7nz-A7-yya"/>
+                            <constraint firstItem="beI-sc-K7b" firstAttribute="leading" secondItem="g4a-gY-fbg" secondAttribute="leading" id="NgH-dg-cNb"/>
+                            <constraint firstItem="beI-sc-K7b" firstAttribute="top" secondItem="g4a-gY-fbg" secondAttribute="top" id="cka-rj-K0b"/>
+                            <constraint firstAttribute="height" constant="19" id="uq4-Gl-izR"/>
+                            <constraint firstAttribute="width" constant="101" id="v4L-mW-1Ij"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未知" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e4a-be-n8i">
+                        <rect key="frame" x="35" y="10" width="28" height="17"/>
+                        <fontDescription key="fontDescription" name="ARYuanGB-BD" family="AR YuanGB" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="e4a-be-n8i" secondAttribute="bottom" constant="10" id="Ajj-VC-yFx"/>
+                    <constraint firstAttribute="trailing" secondItem="g4a-gY-fbg" secondAttribute="trailing" constant="35" id="PB1-Jh-8nd"/>
+                    <constraint firstItem="e4a-be-n8i" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="T3p-oI-ic2"/>
+                    <constraint firstItem="e4a-be-n8i" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="35" id="hQU-Cv-9Ft"/>
+                    <constraint firstItem="g4a-gY-fbg" firstAttribute="centerY" secondItem="e4a-be-n8i" secondAttribute="centerY" id="vv6-OD-O0d"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bottomConstraint" destination="Ajj-VC-yFx" id="bXH-gD-v5i"/>
+                <outlet property="itemNameLab" destination="e4a-be-n8i" id="DQm-b8-g02"/>
+                <outlet property="star1" destination="fHp-3X-lIR" id="gD6-3x-GcB"/>
+                <outlet property="star2" destination="CK6-JF-Xw5" id="PuQ-76-fDy"/>
+                <outlet property="star3" destination="y6q-Mj-U3u" id="YZ5-ou-NNx"/>
+                <outlet property="star4" destination="mNX-C3-JoJ" id="4I6-vD-xPH"/>
+                <outlet property="star5" destination="sFe-wx-E6y" id="xun-cL-1hU"/>
+            </connections>
+            <point key="canvasLocation" x="9.4202898550724647" y="106.13839285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cloud_home_interactive_camp_stars_gray" width="14.5" height="14.5"/>
+        <image name="cloud_home_interactive_camp_stars_yellow" width="14.5" height="14.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

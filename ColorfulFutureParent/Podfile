@@ -1,0 +1,53 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+#source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
+target 'ColorfulFutureParent' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for ColorfulFutureParent
+  pod 'AFNetworking', '4.0.1'
+  pod 'Masonry', '1.1.0'
+  pod 'MJExtension', '3.2.1'
+  pod 'MJRefresh', '3.4.1'
+  pod 'SDWebImage', '5.7.3'
+  pod 'FMDB', '2.7.5'
+  pod 'JKCategories', '1.9.0'
+  pod 'FSCalendar', '2.8.1'
+  pod 'IQKeyboardManager', '6.5.5' # 零行代码解决键盘上移的问题
+  pod 'SAMKeychain', '1.5.3' # 保存keychain的
+  pod 'UICKeyChainStore', '2.2.0' # 存放用户账号密码组件
+  pod 'DateTools', '2.0.0'
+  pod 'YTKKeyValueStore', '0.1.2' # 非关系型数据库存储数据
+  pod 'SDAutoLayout', '~> 2.2.1'
+  pod 'YWRouter', '~> 0.0.5'
+  pod 'DZNEmptyDataSet'
+  pod 'MBProgressHUD','~>1.1.0'
+  pod 'SSZipArchive', '~> 2.2.2' # 直播需要用到的
+  pod 'ReactiveCocoa', :git => 'https://github.com/zhao0/ReactiveCocoa.git', :tag => '2.5.2'
+  pod 'YYModel'
+  pod 'JCore', '~> 2.2.5' #极光推送
+  pod 'JPush', '~> 3.3.3' #极光推送
+  pod 'JAnalytics', '~> 2.1.2' #极光异常上报
+  
+  pod 'UMCCommon' #  基础库
+  pod 'UMCSecurityPlugins' # 安全组件，隐式调用，可选
+  pod 'UMCCommonLog' #  开发阶段进行调试SDK及相关功能使用，可在发布 App 前移除
+  pod 'UMCShare/UI'
+  # 集成微信(完整版14.4M)
+  pod 'UMCShare/Social/WeChat'
+#  pod 'XHLaunchAd'
+
+  pod 'SnapKit'
+  pod 'Kingfisher'   #图片加载
+  pod 'Alamofire'    #网络请求
+  pod 'SwiftyJSON', '~> 4.0'
+  pod 'SwifterSwift'
+  pod 'SVGAPlayer', '~> 2.5.4'
+  pod 'ObjectMapper'
+  pod 'SwiftyFitsize'
+  pod 'WechatOpenSDK'
+  pod 'RxSwift', '~> 5'
+  pod 'RxCocoa', '~> 5'
+  
+end

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HFFeedbackCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="185" height="135"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="185" height="135"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dbW-X3-ZjF">
+                        <rect key="frame" x="0.0" y="0.0" width="185" height="135"/>
+                        <subviews>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zGh-TK-dc2">
+                                <rect key="frame" x="0.0" y="67" width="185" height="1"/>
+                                <color key="backgroundColor" systemColor="scrollViewTexturedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="ugH-xM-EsC"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5iO-43-QIq">
+                                <rect key="frame" x="0.0" y="0.0" width="185" height="135"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wls-4f-UCw">
+                                <rect key="frame" x="78.5" y="53.5" width="28" height="28"/>
+                                <state key="normal" image="scteacher_personList_delete_Normal"/>
+                                <connections>
+                                    <action selector="closeAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="GrD-TQ-Jbx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zGh-TK-dc2" firstAttribute="centerY" secondItem="dbW-X3-ZjF" secondAttribute="centerY" id="J8q-Xt-Kz6"/>
+                            <constraint firstAttribute="centerX" secondItem="Wls-4f-UCw" secondAttribute="centerX" id="Ppk-zA-5wk"/>
+                            <constraint firstItem="5iO-43-QIq" firstAttribute="top" secondItem="dbW-X3-ZjF" secondAttribute="top" id="cn4-Br-aEi"/>
+                            <constraint firstItem="5iO-43-QIq" firstAttribute="leading" secondItem="dbW-X3-ZjF" secondAttribute="leading" id="jz5-UX-Ayw"/>
+                            <constraint firstAttribute="trailing" secondItem="5iO-43-QIq" secondAttribute="trailing" id="kjs-9z-ayN"/>
+                            <constraint firstAttribute="trailing" secondItem="zGh-TK-dc2" secondAttribute="trailing" id="s2Q-kB-tqf"/>
+                            <constraint firstItem="Wls-4f-UCw" firstAttribute="centerY" secondItem="dbW-X3-ZjF" secondAttribute="centerY" id="wrl-vc-Ku4"/>
+                            <constraint firstAttribute="bottom" secondItem="5iO-43-QIq" secondAttribute="bottom" id="yfd-fz-HRb"/>
+                            <constraint firstItem="zGh-TK-dc2" firstAttribute="leading" secondItem="dbW-X3-ZjF" secondAttribute="leading" id="zUb-E4-CbL"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <constraints>
+                <constraint firstItem="dbW-X3-ZjF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="3Hc-Vl-d6w"/>
+                <constraint firstAttribute="trailing" secondItem="dbW-X3-ZjF" secondAttribute="trailing" id="Zlh-0Z-Ip5"/>
+                <constraint firstItem="dbW-X3-ZjF" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="jjb-GP-9R9"/>
+                <constraint firstAttribute="bottom" secondItem="dbW-X3-ZjF" secondAttribute="bottom" id="oCr-7Q-oo7"/>
+            </constraints>
+            <size key="customSize" width="185" height="135"/>
+            <connections>
+                <outlet property="closeBtn" destination="Wls-4f-UCw" id="vIq-82-y9D"/>
+                <outlet property="imgView" destination="5iO-43-QIq" id="z9s-f4-EAx"/>
+            </connections>
+            <point key="canvasLocation" x="203.62318840579712" y="161.04910714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="scteacher_personList_delete_Normal" width="28" height="28"/>
+        <systemColor name="scrollViewTexturedBackgroundColor">
+            <color red="0.43529411764705878" green="0.44313725490196082" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

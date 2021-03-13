@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="aryuangb_md.ttf">
+            <string>ARYuanGB-MD</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HFInteractiveStatusListViewController">
+            <connections>
+                <outlet property="statusTableView" destination="INZ-Mo-pGL" id="U5K-jd-qS3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="btnArr" destination="8ec-J7-8eQ" id="plc-tt-4S8"/>
+                <outletCollection property="btnArr" destination="2Ng-i0-Xx2" id="7S0-dr-S3z"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aCh-t2-KtP">
+                    <rect key="frame" x="217.66666666666663" y="111" width="461" height="252"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D4J-Ch-qPX">
+                            <rect key="frame" x="28" y="44" width="405" height="30"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ec-J7-8eQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="202.33333333333334" height="30"/>
+                                    <fontDescription key="fontDescription" name="ARYuanGB-MD" family="AR YuanGB" pointSize="14"/>
+                                    <state key="normal" title="已预约">
+                                        <color key="titleColor" red="0.72549019607843135" green="0.55294117647058827" blue="0.33725490196078434" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <state key="selected" backgroundImage="bt-yiyuyue">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="btnAction:" destination="-1" eventType="touchUpInside" id="AyE-mX-K1m"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ng-i0-Xx2">
+                                    <rect key="frame" x="202.33333333333337" y="0.0" width="202.66666666666663" height="30"/>
+                                    <fontDescription key="fontDescription" name="ARYuanGB-MD" family="AR YuanGB" pointSize="14"/>
+                                    <state key="normal" title="立即预约">
+                                        <color key="titleColor" red="0.72549019609999998" green="0.55294117649999996" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <state key="selected" backgroundImage="bt-yiyuyue">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="btnAction:" destination="-1" eventType="touchUpInside" id="TkT-IM-q1k"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.96470588235294119" green="0.84313725490196079" blue="0.69411764705882351" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="2Ng-i0-Xx2" firstAttribute="top" secondItem="D4J-Ch-qPX" secondAttribute="top" id="2Zo-gi-2Aq"/>
+                                <constraint firstItem="8ec-J7-8eQ" firstAttribute="leading" secondItem="D4J-Ch-qPX" secondAttribute="leading" id="Lyq-NV-Rio"/>
+                                <constraint firstAttribute="trailing" secondItem="2Ng-i0-Xx2" secondAttribute="trailing" id="NbU-w6-mWy"/>
+                                <constraint firstItem="8ec-J7-8eQ" firstAttribute="top" secondItem="D4J-Ch-qPX" secondAttribute="top" id="PTY-fI-Ht0"/>
+                                <constraint firstItem="2Ng-i0-Xx2" firstAttribute="leading" secondItem="8ec-J7-8eQ" secondAttribute="trailing" id="WND-gO-x7o"/>
+                                <constraint firstAttribute="bottom" secondItem="2Ng-i0-Xx2" secondAttribute="bottom" id="bZ9-gu-8nX"/>
+                                <constraint firstAttribute="bottom" secondItem="8ec-J7-8eQ" secondAttribute="bottom" id="bex-28-cn2"/>
+                                <constraint firstAttribute="height" constant="30" id="ioh-Xm-Shk"/>
+                                <constraint firstItem="8ec-J7-8eQ" firstAttribute="width" secondItem="D4J-Ch-qPX" secondAttribute="width" multiplier="0.5" id="jFf-I3-814"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="INZ-Mo-pGL">
+                            <rect key="frame" x="28" y="74" width="405" height="153"/>
+                            <color key="backgroundColor" red="0.92941176469999998" green="0.87058823529999996" blue="0.75686274509999996" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="153" id="ICv-5G-z01"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </tableView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="252" id="A1N-tY-6bq"/>
+                        <constraint firstAttribute="width" constant="461" id="EsK-dg-IEN"/>
+                        <constraint firstAttribute="trailing" secondItem="INZ-Mo-pGL" secondAttribute="trailing" constant="28" id="Syf-K8-KaS"/>
+                        <constraint firstItem="INZ-Mo-pGL" firstAttribute="leading" secondItem="aCh-t2-KtP" secondAttribute="leading" constant="28" id="TPz-6n-TlC"/>
+                        <constraint firstAttribute="bottom" secondItem="INZ-Mo-pGL" secondAttribute="bottom" constant="25" id="Z2d-da-gqT"/>
+                        <constraint firstItem="D4J-Ch-qPX" firstAttribute="trailing" secondItem="INZ-Mo-pGL" secondAttribute="trailing" id="fI4-bR-vsQ"/>
+                        <constraint firstItem="INZ-Mo-pGL" firstAttribute="top" secondItem="D4J-Ch-qPX" secondAttribute="bottom" id="sVc-ri-Oc5"/>
+                        <constraint firstItem="D4J-Ch-qPX" firstAttribute="leading" secondItem="INZ-Mo-pGL" secondAttribute="leading" id="sbi-ER-BYF"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="aCh-t2-KtP" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="30" id="3OJ-Ol-zbL"/>
+                <constraint firstItem="aCh-t2-KtP" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="lMa-mh-hn2"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="138.58695652173915" y="121.73913043478262"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bt-yiyuyue" width="202" height="30"/>
+    </resources>
+</document>

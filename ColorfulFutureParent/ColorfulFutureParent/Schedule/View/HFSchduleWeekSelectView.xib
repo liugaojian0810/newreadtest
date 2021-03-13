@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="aryuangb_bd.ttf">
+            <string>ARYuanGB-BD</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="38" id="KGk-i7-Jjw" customClass="HFSchduleWeekSelectView" customModule="柒彩未来" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="91" height="38"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="91" height="38"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="select_point_bottom" translatesAutoresizingMaskIntoConstraints="NO" id="eo9-Qd-rEQ">
+                        <rect key="frame" x="72" y="16.5" width="9" height="5.5"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZrL-MQ-6am">
+                        <rect key="frame" x="54" y="0.0" width="13" height="38"/>
+                        <fontDescription key="fontDescription" name="ARYuanGB-BD" family="AR YuanGB" pointSize="15"/>
+                        <color key="textColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GFn-Dx-EDv">
+                        <rect key="frame" x="0.0" y="0.0" width="91" height="38"/>
+                        <connections>
+                            <action selector="click:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="jlX-Ry-bqR"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="GFn-Dx-EDv" secondAttribute="bottom" id="1eg-Un-PfA"/>
+                    <constraint firstAttribute="bottom" secondItem="ZrL-MQ-6am" secondAttribute="bottom" id="6Fr-3h-POx"/>
+                    <constraint firstItem="GFn-Dx-EDv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Fyz-OZ-SxW"/>
+                    <constraint firstAttribute="trailing" secondItem="eo9-Qd-rEQ" secondAttribute="trailing" constant="10" id="GoA-UM-pNG"/>
+                    <constraint firstItem="eo9-Qd-rEQ" firstAttribute="leading" secondItem="ZrL-MQ-6am" secondAttribute="trailing" constant="5" id="Ptd-hC-xvz"/>
+                    <constraint firstAttribute="trailing" secondItem="GFn-Dx-EDv" secondAttribute="trailing" id="WFS-XV-KqU"/>
+                    <constraint firstItem="GFn-Dx-EDv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="j2x-If-e6h"/>
+                    <constraint firstItem="ZrL-MQ-6am" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="m22-XA-5Hu"/>
+                    <constraint firstItem="eo9-Qd-rEQ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="v66-AC-RGC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="enterImg" destination="eo9-Qd-rEQ" id="U77-UD-MJf"/>
+                <outlet property="nameLabel" destination="ZrL-MQ-6am" id="o26-7C-yzr"/>
+            </connections>
+            <point key="canvasLocation" x="235.50724637681162" y="57.589285714285708"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="select_point_bottom" width="9" height="5.5"/>
+    </resources>
+</document>

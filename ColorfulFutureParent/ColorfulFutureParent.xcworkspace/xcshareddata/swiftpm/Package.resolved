@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Async",
+        "repositoryURL": "https://github.com/duemunk/Async",
+        "state": {
+          "branch": null,
+          "revision": "a66d1a6efce6c1296ab228bdc3ec7da2b8968138",
+          "version": "2.1.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
